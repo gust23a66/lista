@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 100vh;
+  padding-top: 60px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.todo-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+li span{
+  flex: 1;
+}
+
+li button{
+  margin-left: 5px;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #888;
+  background: #e0e0e0;
+}
+
+.btn-delete {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background: #e63939;
+}
+
+.btn-edit {
+  background: #2196F3;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.btn-edit:hover {
+  background: #1976D2;
+}
+
+.message {
+  display: none;
+  color: red;
+  margin-top: 10px;
+}
+
+.message {
+  display: none;
+  color: red;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.message.show {
+  display: block;
+  opacity: 1;
+}
+
+.btn-save {
+  background: #2196F3;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  padding: 4px 8px; /* menor que os outros botões */
+  cursor: pointer;
+}
+
+.btn-save:hover {
+  background:  #1976D2;
+}
